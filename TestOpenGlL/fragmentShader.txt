@@ -1,0 +1,14 @@
+#version 330 core
+out vec4 FragColor;
+
+in vec2 TexCoord;
+
+uniform sampler2D TextureWooden;
+uniform sampler2D TextureSmile;
+uniform float mixrate;
+
+void main()
+{
+   FragColor = mix(texture(TextureWooden, TexCoord), texture(TextureSmile, vec2(1.0 - TexCoord.x, TexCoord.y)), mixrate);
+   //FragColor = texture(TextureSmile, TexCoord);
+}

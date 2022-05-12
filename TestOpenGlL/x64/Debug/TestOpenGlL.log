@@ -1,0 +1,15 @@
+﻿E:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(TestOpenGlL.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  mian.cpp
+E:\VSProject\TestOpenGlL\TestOpenGlL\Shader.h(5,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+E:\VSProject\TestOpenGlL\TestOpenGlL\mian.cpp(285,22): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+E:\VSProject\TestOpenGlL\TestOpenGlL\mian.cpp(195,25): warning C4101: “EBO”: 未引用的局部变量
+E:\VSProject\TestOpenGlL\TestOpenGlL\mian.cpp(362,65): warning C4305: “+=”: 从“double”到“float”截断
+E:\VSProject\TestOpenGlL\TestOpenGlL\mian.cpp(363,67): warning C4305: “-=”: 从“double”到“float”截断
+E:\VSProject\TestOpenGlL\TestOpenGlL\mian.cpp(391,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\VSProject\TestOpenGlL\TestOpenGlL\mian.cpp(392,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\VSProject\TestOpenGlL\TestOpenGlL\mian.cpp(395,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+E:\VSProject\TestOpenGlL\TestOpenGlL\mian.cpp(396,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+E:\VSProject\TestOpenGlL\TestOpenGlL\mian.cpp(397,10): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\VSProject\TestOpenGlL\TestOpenGlL\mian.cpp(398,10): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\VSProject\TestOpenGlL\TestOpenGlL\mian.cpp(430,17): warning C4244: “-=”: 从“double”转换到“float”，可能丢失数据
+  TestOpenGlL.vcxproj -> E:\VSProject\TestOpenGlL\x64\Debug\TestOpenGL.exe
