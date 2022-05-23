@@ -123,13 +123,13 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalUsingDirectories>%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>E:\XYZ\OpenGL\glm\glm;E:\XYZ\OpenGL\glad\include;E:\XYZ\OpenGL\glew\include;E:\XYZ\OpenGL\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\XYZ\OpenGL\assimp\include;E:\XYZ\OpenGL\glm\glm;E:\XYZ\OpenGL\glad\include;E:\XYZ\OpenGL\glew\include;E:\XYZ\OpenGL\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>E:\XYZ\OpenGL\glew\lib\Release\Win32;E:\XYZ\OpenGL\glfw\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\XYZ\OpenGL\assimp\build\lib\Debug;E:\XYZ\OpenGL\glew\lib\Release\Win32;E:\XYZ\OpenGL\glfw\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp-vc142-mtd.lib;opengl32.lib;glfw3.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>MSVCRT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
@@ -151,18 +151,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\XYZ\OpenGL\glad\src\glad.c" />
+    <ClCompile Include="camera.cpp" />
     <ClCompile Include="mian.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="stb_image.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="camera.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="vertexShader.txt" />
-    <Text Include="fragmentShader.txt" />
+    <Text Include="vertexShader.glsl" />
+    <Text Include="fragmentShader.glsl" />
+    <Text Include="light.glsl" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="awesomeface.png" />
