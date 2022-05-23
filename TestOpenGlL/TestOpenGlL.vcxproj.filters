@@ -27,6 +27,9 @@
     <ClCompile Include="stb_image.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
@@ -38,12 +41,18 @@
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="vertexShader.txt">
+    <Text Include="vertexShader.glsl">
       <Filter>源文件</Filter>
     </Text>
-    <Text Include="fragmentShader.txt">
+    <Text Include="fragmentShader.glsl">
+      <Filter>源文件</Filter>
+    </Text>
+    <Text Include="light.glsl">
       <Filter>源文件</Filter>
     </Text>
   </ItemGroup>
